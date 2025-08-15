@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LZA官网</title>
+    <style>
+        /* 全局重置 - 解决白条问题 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background: #f0f0f0;
+            min-height: 100vh;
+            padding-top: 80px; /* 为顶部栏留出空间 */
+        }
+        
+        /* 顶部栏 */
+        .top-bar {
+            background-color: #000000;
+            padding: 20px 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 100;
+        }
+        
+        .super-big {
+            font-size: 4rem;
+            font-weight: bold;
+            text-align: center;
+            color: #ffffff;
+        }
+        
+        /* 内容区域 */
+        .content {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .download-box {
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            margin-top: 30px;
+        }
+        
+        .download-link {
+            display: inline-block;
+            background: #0d62d9;
+            color: #fff;
+            padding: 15px 30px;
+            font-size: 1.8rem;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 8px;
+            margin: 20px 0;
+            transition: all 0.3s ease;
+        }
+        
+        .download-link:hover {
+            background: #1a252f;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        .file-info {
+            margin-top: 20px;
+            color: #555;
+            font-size: 1.1rem;
+        }
+        
+        /* 响应式设计 */
+        @media (max-width: 768px) {
+            .super-big {
+                font-size: 2.5rem;
+            }
+            
+            .download-link {
+                padding: 12px 25px;
+                font-size: 1.4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 顶部栏 -->
+    <div class="top-bar">
+        <h1 class="super-big">LZA官方唯一网站</h1>
+    </div>
+    
+    <!-- 内容区域 -->
+    <div class="content">
+        <div class="download-box">
+            <h2>LP+ 0.0.1 运行器</h2>
+            <p>点击下方链接下载最新版本</p>
+            
+            <!-- 下载链接 -->
+            <a href="LP+运行器_setup0.0.1.exe" 
+               download="LP+运行器_setup0.0.1.exe" 
+               class="download-link">
+                下载 LP+ 运行器
+            </a>
+            
+            <div class="file-info">
+                <p>版本: 0.0.1 | 大小: 10.2 MB | 更新: 2023-11-15</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
